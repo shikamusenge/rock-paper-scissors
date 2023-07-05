@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rock paper scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div id="header">
+          <h3>Rock paper scissors</h3>
+          <h4>Computer Vs Human</h4>
+        </div>
+        <div id="play-ground">
+          <div id="title">Click on your choice</div>
+          <div id="choices">
+            <div class="choice-item" data-id="rock">✊</div>
+            <div class="choice-item" data-id="paper">✋</div>
+            <div class="choice-item" data-id="scissors">🤞</div>
+          </div>
+        </div>
+        <div id="result">
+          <div class="container">
+            <div id="title-bar">
+              <h3>Game Result</h3>
+              <span id="close-btn">&times</span>
+            </div>
+            <div id="result-body"></div>
+          </div>
+        </div>
+        <div id="play-History">
+          <h3>Game history</h3>
+          <table>
+            <tr>
+              <th colspan="2">user</th>
+              <th colspan="2">Computer</th>
+            </tr>
+            <tr>
+              <td>Pass</td>
+              <td id="player-pass">0</td>
+              <td>Pass</td>
+              <td id="computer-pass">0</td>
+            </tr>
+            <tr>
+              <td>Fail</td>
+              <td id="player-fail">0</td>
+              <td>Fail</td>
+              <td id="computer-fail">0</td>
+            </tr>
+            <tr>
+              <td colspan="2">Tie</td>
+              <td colspan="2" id="ties">0</td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

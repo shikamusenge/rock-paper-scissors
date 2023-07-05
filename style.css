@@ -1,0 +1,89 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root {
+  --primary-color: rgb(234, 234, 240);
+  --secondary-color: white;
+}
+body {
+  background-color: var(--primary-color);
+}
+main {
+  margin-inline: 5vw;
+  text-align: center;
+  height: 100vh;
+  width: 90vw;
+}
+main #choices {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  gap: 1vw;
+  font-size: xx-large;
+  padding-top: 0.5rem;
+}
+main #choices .choice-item {
+  background-color: var(--secondary-color);
+  min-width: 20vw;
+  min-height: 20vw;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5vw;
+  cursor: pointer;
+}
+main #choices .choice-item:hover {
+  border: inset;
+  background-color: var(--primary-color);
+  box-shadow: 5px 5px 5px 2px whitesmoke;
+}
+main #play-History table {
+  min-width: 90%;
+  text-align: left;
+  padding: 1vw;
+}
+main #play-History table tr {
+  box-shadow: 5px 5px 5px var(--primary-color);
+  background-color: var(--secondary-color);
+}
+main #result {
+  left: 0;
+  top: 0;
+  right: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  background-color: rgba(193, 193, 207, 0.726);
+  z-index: 1;
+  display: none;
+  align-items: center;
+}
+main #result .container {
+  padding-block-end: 1rem;
+  margin-inline: auto;
+  min-width: 90vw;
+  max-width: 500px;
+  min-height: fit-content;
+  background-color: var(--secondary-color);
+  border-radius: 5vw;
+}
+
+main #result .container #title-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3vw;
+  align-items: center;
+}
+#close-btn {
+  background-color: rgba(255, 0, 0, 0.829);
+  color: white;
+  border-radius: 2px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  padding-inline: 2px;
+}
+#rslt {
+  display: flex;
+  justify-content: space-around;
+}
